@@ -548,13 +548,9 @@ between them and the server. This is a form of HTTP blocking,
 
 ### HTTP response
 
-Every time you visit a website, your browser (the client) sends a request
-("HTTP request") through the HTTP protocol to the server that is hosting the
-website.
+A HTTP response is sent by the HTTP server in response to the HTTP request recieved from the client.
 
-In response to an HTTP request, a server will send an HTTP response, which
-includes HTTP response headers and optionally a response body, which in the case
-of a website will be the content of the page.
+The response includes HTTP response headers and, optionally, a response body, which could be the content of a webpage, or any other type of file, such as an image.
 
 ### HTTP status codes
 
