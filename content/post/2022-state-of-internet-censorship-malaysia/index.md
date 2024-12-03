@@ -8,7 +8,7 @@ author: "Kelly Koh (Sinar Project)  and Siti Nurliza Samsudin (Sinar Project)"
 
 date: "2022-12-23"
 
-tags: ["malaysia", "censorship", "country-my"]
+tags: ["malaysia", "censorship", "country-my", "theme-news_media", "theme-human_rights"]
 
 categories: ["report"]
 
@@ -17,6 +17,8 @@ categories: ["report"]
 It is a codified guarantee that the internet will not be censored except for illegal, obscene and indecent content, while in reality the extent of censorship and its implementation are wider than projected and remain to be explored.
 
 ---
+
+[Diterjemah ke dalam bahasa Melayu](https://imap.sinarproject.org/reports/2022/imap-state-of-internet-censorship-country-report-2022-malaysia/2022-malaysia-translation)
 
 * The Ministry of Communications and Multimedia (MCMC) do not publish list of blocked sites, however statements were released from time to time to announce the number of sites blocked. It was revealed that 2,195 websites promoting online gambling were blocked as of March 2021.[^1] Between 2020 to July 2021, 960 phishing sites were blocked.[^2] From 2018 to September 2021, 4,068 pornography sites were blocked by MCMC.[^3]
 
@@ -339,9 +341,9 @@ The state of internet censorship could change from time to time. We encourage in
 
 
 * Increase testing by using OONI Probe app, available on iOS and Android mobile, and desktop.
-* Review the Malaysia country test list available at <[https://github.com/citizenlab/test-lists/blob/master/lists/my.csv](https://github.com/citizenlab/test-lists/blob/master/lists/my.csv)> and refer to the guidelines prepared by OONI at <[https://ooni.org/get-involved/contribute-test-lists](https://ooni.org/get-involved/contribute-test-lists)>
-* Translate the OONI Probe app into your local language at <[https://explore.transifex.com/otf/ooniprobe/](https://explore.transifex.com/otf/ooniprobe/)>
-* Find out more about the state of internet censorship in community discussions by joining the OONI’s Slack channel at [https://slack.ooni.org/](https://slack.ooni.org/).
+* Review the Malaysia country test list available at <https://github.com/citizenlab/test-lists/blob/master/lists/my.csv> and refer to the guidelines prepared by OONI at <https://ooni.org/get-involved/contribute-test-lists>
+* Translate the OONI Probe app into your local language at <https://explore.transifex.com/otf/ooniprobe/>
+* Find out more about the state of internet censorship in community discussions by joining the OONI’s Slack channel at <https://slack.ooni.org/>.
 
 
 ## Acknowledgements
@@ -515,7 +517,7 @@ It is important to note that the findings are only applicable to the websites th
 
 ### How are the network measurements analysed?
 
-OONI processes the following types of data through its [data pipeline](https://github.com/ooni/pipeline):
+OONI processes the following types of data through its data pipeline: https://github.com/ooni/pipeline.
 
 
 #### Country code

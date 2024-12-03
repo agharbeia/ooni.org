@@ -5,6 +5,8 @@ name: Access Now #KeepItOn campaign
 title: Access Now
 website: https://www.accessnow.org/keepiton/
 reports:
+- text: "Senegal: Social media blocks and network outages amid political unrest"
+  link: "https://ooni.org/post/2023-senegal-social-media-blocks/"
 - text: "OONI Community Video"
   link: "https://www.youtube.com/watch?v=zrclQ2QZjVo"
 - text: "10th Ooniversary: OONI Community (live-streamed presentation)"
@@ -25,6 +27,6 @@ reports:
 
 Access Now defends and extends the digital rights of users at risk around the world through policy and advocacy efforts. Every year, they host [RightsCon](https://www.rightscon.org/), the world's leading summit on human rights in the digital age.
 
-Since 2016, Access Now's **[#KeepItOn coalition](https://www.accessnow.org/keepiton/)** — more than 220 organizations from 99 countries around the world — has been **fighting internet shutdowns** with all kinds of creative approaches, including grassroots advocacy, direct policy-maker engagement, technical support, corporate accountability, and legal intervention.
+Since 2016, Access Now's **[#KeepItOn coalition](https://www.accessnow.org/keepiton/)** — more than 300 organizations from 105 countries around the world — has been **fighting internet shutdowns** with all kinds of creative approaches, including grassroots advocacy, direct policy-maker engagement, technical support, corporate accountability, and legal intervention.
 
 OONI has been a member of the #KeepItOn campaign since 2016, supporting human rights advocates around the world with censorship measurement.

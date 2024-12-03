@@ -4,9 +4,9 @@ description: This Data Policy discloses and explains what data the OONI project 
 aliases: ["/data-policy"]
 ---
 
-**Last modified:** September 6, 2022
+**Last modified:** October 15, 2024
 
-**Version:** 1.4.6
+**Version:** 1.6.0
 
 This Data Policy discloses and explains what data the [Open Observatory of
 Network Interference (OONI) project](https://ooni.org/) ("we", "us", or "our")
@@ -135,7 +135,7 @@ will collect sanitized technical data, including device identifier information,
 which will help us understand why the OONI Probe app has crashed. We do not
 collect the IP address or a unique identifier of the user.
 
-On [F-Droid](https://f-droid.org/packages/org.openobservatory.ooniprobe/), we do *not* use any analytics.
+On [F-Droid](https://f-droid.org/packages/org.openobservatory.ooniprobe/) we do *not* use any analytics.
 
 For the [OONI Probe desktop app](https://ooni.org/install/desktop), we use:
 
@@ -144,26 +144,25 @@ sanitized technical data, including device identifier information, which will
 help us understand why the OONI Probe app has crashed. We do not collect the IP
 address or a unique identifier of the user.
 
-Details about our specific setup can be found in [ooni/sysadmin](https://github.com/ooni/sysadmin).
-
 On both the OONI Probe mobile and desktop apps, you can opt in to sharing
 crash reports during the onboarding process. If you
 change your mind, you can opt out through the settings of the apps.
 
+On [OONI Probe Web](https://probe-web.ooni.org) we do *not* use any analytics.
+
+Details about our specific setup can be found in [ooni/sysadmin](https://github.com/ooni/sysadmin).
+
 ### OONI website
 
-We use the open source [Matomo](https://matomo.org/) analytics platform (which we host ourselves) to
+We use the open source [Umami](https://umami.is/) analytics platform (using the [EU Umami cloud service](https://umami.is/docs/cloud)) to
 collect data on how many visits [OONI Explorer](https://explorer.ooni.org/) and our [website](https://ooni.org/) receive. This is
 done **without the use of cookies**. Since we do not use cookies or track any
-personal data, these analytics are [enabled by default](https://matomo.org/cookie-consent-banners/). 
+personal data, these analytics are [enabled by default](https://umami.is/docs/faq).
 
 We do not record the full IP address of users (which is “anonymised” to the
 first 3 octets, ex. 123.45.67.0).
 
 On [OONI Explorer](https://explorer.ooni.org/), we also use [Sentry](https://sentry.io/) to log crash reports, which helps us improve the service.
-
-You can opt out of our use of analytics on [OONI Explorer](https://explorer.ooni.org/) and the [OONI website](https://ooni.org/)
-by **unchecking the opt-out box** at the end of this Data Policy.
 
 We will notify you of any future changes to our use of analytics through an
 update to this Data Policy.
@@ -171,6 +170,8 @@ update to this Data Policy.
 ## OONI Probe
 
 ### Data We Collect
+
+Logging into the [OONI Run](https://run.ooni.org/) platform is facilitated by a one-time magic link. We do *not* store your email address upon login. Your email address is saved as part of the description in any OONI Run link you create and is displayed to end users of your links. We collect and display your email address in the OONI Run links you create to enable OONI Probe users who receive your OONI Run link to trust it and to have the opportunity to reach out to you (for example, if they would like to propose more URLs for testing). Our goal is to help facilitate more trust and coordination among testers.
 
 We collect different types of network measurements when you run different types
 of OONI Probe tests. You can learn how each OONI Probe test works (and what
@@ -230,6 +231,14 @@ encouraging you to test a long list of URLs.
 You cannot opt out of submitting your network ASN or information about the type
 of network (e.g. WiFi) you are running OONI Probe on, as this information is
 necessary in order for measurements to be useful.
+
+#### Operating system and browser name
+
+Through the [OONI Probe mobile and desktops apps](https://ooni.org/install), we
+collect the operating system name (e.g `Windows`) used by the user. Through
+[OONI Probe Web](https://probe-web.ooni.org/), we collect the browser name
+(e.g `Firefox`) used by the user. This data helps us evaluate if there are
+platform-specific issues impacting the measurements.
 
 #### Network measurements
 
@@ -329,6 +338,10 @@ Data required for sending out push notifications will be stored separately on a
 secure database server operated by OONI (which is different from the public
 metadb that hosts OONI Probe measurements).
 
+If you create an [OONI Run](https://run.ooni.org/) v2 link, we will store the email address that you use for the creation of that link. This enables OONI Probe users who receive your OONI Run link to trust it based on your email address (which is displayed in the OONI Run link you create). This can help facilitate more trust and coordination among testers.
+
+We do *not* store your email address when you log into the [OONI Run](https://run.ooni.org/) platform, but only when you create an OONI Run link.
+
 ### Data We Publish
 
 We [publish](https://ooni.org/data/) ALL of the OONI Probe network measurement data that we have collected
@@ -341,7 +354,9 @@ web interface, called [OONI Explorer](https://explorer.ooni.org/).
 For more information on the license under which the data is released, see
 [github.com/ooni/license/data](https://github.com/ooni/license/tree/master/data).
 
-We will *not* publish data related to analytics and push notification support, both of which are securely stored separately from the public measurement metadb.
+We will *not* publish data related to analytics and push notification support, both of which are securely stored separately from the public measurement metadb. 
+
+The email address that you use to create an [OONI Run](https://run.ooni.org/) v2 link will be published in the link that you create. This enables OONI Probe users who receive your OONI Run link to trust it.
 
 ### Third-party services
 
@@ -354,11 +369,16 @@ purposes. Learn more about M-Lab's data governance through their [privacy statem
 
 **Sentry**
 
-We use [Sentry](https://sentry.io/privacy/) to log crash reports for the [OONI Probe](https://ooni.org/install) apps. This information is essential for identifying bugs and improving the performance of the apps. You can opt out through the settings of the OONI Probe apps. 
+We use [Sentry](https://sentry.io/privacy/) to log crash reports for the [OONI Probe](https://ooni.org/install) apps. This information is essential for identifying bugs and improving the performance of the apps. You can opt out through the settings of the OONI Probe apps.
 
-We also use [Sentry](https://sentry.io/privacy/) to log crash reports on [OONI Explorer](https://explorer.ooni.org/), which helps us improve the performance of the service. You can opt out of our use of analytics on OONI Explorer by unchecking the opt-out box at the end of this Data Policy.
+We also use [Sentry](https://sentry.io/privacy/) to log crash reports on [OONI Explorer](https://explorer.ooni.org/), which helps us improve the performance of the service.
 
 As part of crash reports, we collect sanitized technical data, but we do *not* collect the IP address or a unique identifier of the user. Given that Sentry is a third-party service, we recommend referring to their [privacy policy](https://sentry.io/privacy/).
+
+**Umami Cloud**
+
+We use [Umami Cloud](https://umami.is/docs/cloud) for collecting privacy
+preserving analytics about website visits, specifically on the EU instance.
 
 ## OONI web services
 
@@ -385,5 +405,3 @@ Key ID:
 Fingerprint:
 4C15 DDA9 96C6 C0CF 48BD 3309 6B29 43F0 0CB1 77B7
 ```
-
-{{< tracking-opt-out >}}
